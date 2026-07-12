@@ -1,0 +1,26 @@
+{
+  "name": "solana-agent-kit-stake-intel",
+  "version": "1.0.0",
+  "description": "Solana Agent Kit plugin that returns the live activation state of a stake account (active / activating / deactivating / inactive) plus the delegated validator, using getStakeActivation.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "keywords": ["solana", "agent-kit", "plugin", "stake", "staking", "validator", "stake-activation"],
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0"
+  },
+  "peerDependencies": {
+    "solana-agent-kit": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0",
+    "zod": "^3.23.0"
+  }
+}
